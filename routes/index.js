@@ -14,14 +14,14 @@ router.get('/', function(req, res, next) {
 
   connection.connect(function (err) {
     if (err) {
-      return res.render('index', { results: ['no connection'] });
+      return res.render('index', { results: [{ name: 'no connection'}] });
     }
 
     let sql = `SELECT * FROM gyms`;
     connection.query(sql, (error, results, fields) => {
       if (error) {
         connection.destroy();
-        return res.render('index', { results: ['no query'] });
+        return res.render('index', { results: [{name: 'no query'}] });
       }
 
       results.sort((a, b) => (a.name > b.name) ? 1 : -1)
