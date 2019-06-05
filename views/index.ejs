@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pokemon Go Gyms</title>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+
+          <ul class="list-group">
+            <% results.forEach(function(gym){ %>
+              <a href='http://www.google.com/maps/place/<%- gym.latitude %>,<%- gym.longitude %>' target="_blank" class="list-group-item">
+                <div class='gym-name float-left'><%- gym.name %></div>
+                <div class="gym-loc float-right">(<%- gym.latitude %>, <%- gym.longitude %>)</div>
+              </a>
+            <% }) %>
+          </ul>
+
+         </div>
+      </div>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+
+    <script src="/javascripts/script.js"></script>
+  </body>
+</html>

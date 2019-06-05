@@ -1,0 +1,20 @@
+body {
+  padding: 50px;
+  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+
+.list-group-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.gym-name {
+  word-break: break-all;
+  width: 50%;
+}
