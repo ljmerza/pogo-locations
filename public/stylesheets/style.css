@@ -1,6 +1,5 @@
 body {
   padding: 50px;
-  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -15,6 +14,5 @@ a {
 }
 
 .gym-name {
-  word-break: break-all;
-  width: 50%;
+  font-size: 60px;
 }

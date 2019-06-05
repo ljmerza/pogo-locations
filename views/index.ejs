@@ -15,7 +15,6 @@
             <% results.forEach(function(gym){ %>
               <a href='http://www.google.com/maps/place/<%- gym.latitude %>,<%- gym.longitude %>' target="_blank" class="list-group-item">
                 <div class='gym-name float-left'><%- gym.name %></div>
-                <div class="gym-loc float-right">(<%- gym.latitude %>, <%- gym.longitude %>)</div>
               </a>
             <% }) %>
           </ul>
