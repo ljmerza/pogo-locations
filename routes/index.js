@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
 
   connection.connect(function (err) {
     if (err) {
-      return res.render('index', { results: [{ name: 'no connection'}] });
+      return res.render('index', { results: [{ name: `no connection` }] });
     }
 
     let sql = `SELECT * FROM gyms`;
