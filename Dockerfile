@@ -6,11 +6,6 @@ COPY package*.json ./
 RUN npm install
 
 COPY . .
-# ENV DB_HOST=${DB_HOST}
-# ENV DB_USERNAME=${DB_USERNAME}
-# ENV DB_PASSWORD=${DB_PASSWORD}
-# ENV DB_DATABASE=${DB_DATABASE}
-# ENV PORT=${PORT}
 
-# EXPOSE ${PORT}
+USER node
 CMD [ "npm", "start" ]
