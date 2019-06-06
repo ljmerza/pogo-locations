@@ -8,5 +8,5 @@ Need .env file with db creds and port
 
 ```bash
 docker build -t ljmerza/pogo .
-docker run -p 3000:3000 --env-file=.env -d ljmerza/pogo
+docker run -p 3000:3000 -e "NODE_ENV=production" --env-file=.env -u "node" -m "300M" --memory-swap "1G" -d ljmerza/pogo
 ```
